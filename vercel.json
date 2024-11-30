@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "run.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "run.py"
+      }
+    ],
+    "env": {
+      "SECRET_KEY": "thisIsSecretKey",
+      "ALGORITHM": "HS256",
+      "MONGO_URI": "mongodb+srv://dubeharsh320:yY64v4djov5RSQx6@cluster0.cgyk1.mongodb.net/MovieDB?retryWrites=true&w=majority",
+      "UPLOAD_FOLDER": "uploads/",
+      "MAX_CONTENT_LENGTH": "16777216",
+      "API_KEY": "dd39691a",
+      "YOUTUBE_API_KEY": "AIzaSyAHX3vfeBZ51GkPTHV6TWWK4y4NIoPwOxY"
+    }
+  }
+  
